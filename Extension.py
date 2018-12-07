@@ -1,2 +1,2 @@
 file = input("please enter the files name :")
-print("file extension is :",file.split(.))
+print("file extension is :",file.split('.'))
