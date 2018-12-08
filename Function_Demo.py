@@ -5,3 +5,7 @@ def mul(a,b): #Defining a fn.
 
 #Calling a fn.
 mul(5,2)
+
+def define():
+    print("Hello!Monu")
+define()
