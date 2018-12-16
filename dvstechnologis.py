@@ -25,6 +25,8 @@ while ch!=0:
 		print("\t3. Hadoop: 9000 INR")
 		print("\t4. Sparks: 10000 INR")
 		global crs_choice
+		crs_choice=1
+			
 		while crs_choice!=0:
 		
 			try:
