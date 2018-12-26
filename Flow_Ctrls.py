@@ -90,4 +90,149 @@ for i in range(1,5):
     for j in range(1,i+1):
         print(i,end=" ")
     print() 
+
+s=[4,5,8,3]
+num=int(input("pls enter num :"))
+for ele in s:
+    if num==ele:
+        print("found")
+        break
+
+else:
+    print("not found")
+
+
+
+weight = float(input("How many pounds does your suitcase weigh? "))
+if weight > 50:
+    print("There is a $25 charge for luggage and already deducted from your credit card, don’t get surprise.")
+print("Thank you and Enjoy the Journey Boss.")
+
+
+
+x="monu"
+print(isinstance(x, int))
+print(isinstance(x, str))
+
+
+
+
+x=10
+if isinstance(x, str):
+    print("Yes it is integer type")
+else:
+    print("I am sure, it is not integer type")
+
+
+
+name="monu"
+if isinstance(name, int):
+    print("Yes it is integer type")
+else:
+    print("I am sure, it is not int type")
+
+
+allowed_users = ['Monu', 'Krishna', 'Vinni']
+username = input("What is your login name? : ")
+if username in allowed_users:
+    print("Access granted, Enjoy Guru ")
+else:
+    print("Sorry Boss, access denied: Contact Admin team. Namaskaar")
+
+
+for x in range(1, 20):
+    if (x%2==0) and (x%4==0):
+        print(x)
+
+
+lines = []
+print(lines)
+while True:
+    l = input()
+    if l:
+        lines.append(l)
+    else:
+        break
+print(lines)
+
+
+s = input("Enter string, mixed with numbers: ")
+l=0
+for c in s:
+    if c.isdigit(): #isalpha()
+        l=l+1
+print("Characters count from entered text: ", l)
+
+
+n = int(input("Enter a number for table: "))
+for i in range(1,11):
+    print(n, 'x', i,'=',n*i)
+
+#x = [1,5,8]
+#for i in x:
+ #   print(i.upper())
+
+
+i = 1
+while i<=20:
+    if i%3 == 0:
+        break
+    print(i)
+    i += 2
+
+
+
+#True = False
+#while True:
+ #   print(True)
+  #  break
+
+x = "python"
+for i in x:
+    print(i+"z")
+
+x = "python"
+while i in x:
+    print(i)
+
+
+x = "python"
+i= "a"
+while i in x:
+    print(i)
+
+x = 'abcd'
+for i in range(10):
+    print(i)
+
+x = 'abcd'
+for i in range(len(x)):
+    print(i)
+
+x = 'abcd'
+for i in range(len(x)):
+    #print(i[x]) TypeError : int object is not subsciptable
+    print(x[i])
+
+for i in range(2):
+    print(i)
+
+for i in " ":
+    print(i)
 """
+x = 2
+for i in range(x):
+    x -= 2
+    print (x)
+
+for i in range(9):
+    if i == 5:
+       break
+    else:
+        print(i)
+else:
+    print("no value")
+
+text = "my name is python"
+for i in text:
+    print (i, end="")
