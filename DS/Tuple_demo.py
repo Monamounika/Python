@@ -1,6 +1,6 @@
 
 tuple=(['cat', 'dog', 5])
-
+print(tuple)
 print(type(tuple))
 
 s=(5,9,8)
