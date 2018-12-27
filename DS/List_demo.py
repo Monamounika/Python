@@ -46,3 +46,19 @@ print(y)
 #cat = ['fat', 'black', 'loud']
 cat = ["size","color","disposition"]
 print(cat)
+
+x=[10,30,50]
+y=x[:] #cloning
+print(x)
+print(y)
+print(id(x))
+print(id(y))
+y.append(40)
+print(x)
+print(y)
+
+#Nested lists
+
+m=[6,8,9]
+n=[1,2,3,m]
+print(n)
