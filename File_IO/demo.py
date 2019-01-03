@@ -1,0 +1,6 @@
+f=open("abe.txt",'w')
+print("File name",f.name)
+print("Is File Readable",f.readable())
+f.write("welcome\n")
+f.write("PYTHON\n")
+f.write(" world")
