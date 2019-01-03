@@ -22,3 +22,13 @@ class AverageCalculator:
     def __call__(self, new_average):
         # Use any method in #1, #2 or #3
         return result
+
+
+r"""                                                                                                                    
+>>> bin_group(bool, [1,1,1,0,0,1,1,0,1,0,0])                                                                            
+((1, 1, 1, 1, 1, 1), (0, 0, 0, 0, 0))                                                                                   
+"""                                                                                                                     
+from functools import reduce                                                                                                                                                                                                                                                                                                                                      
+
+def bin_group(f, data):                                                                                                 
+    return reduce(lambda T,t:(T[0]+(t[1],),T[1]) if t[0] else (T[0],T[1]+(t[1],)), ((f(i), i) for i in data), ((),()))
