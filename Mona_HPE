@@ -1,0 +1,14 @@
+Here is a quiz for fun. Try to explain it and rewrite it:
+>>> X = [1,2,3,4,5,6]
+>>> Y = list(zip(*[iter(X)]*3))
+>>> Y
+[(1, 2, 3), (4, 5, 6)]
+
+Damn, this thing is tricky
+The [ ]expression will create a list with the content as-is. In this case the iterator inside of it will NOT be iterated. This is different from the list() function, which always bothers me.
+Multiply a list with an integer is duplicate the list by that number of times and concatenate them together. In this case, The iterator will be duplicated by 3 times and concatenated. The key thing here is that these 3 iterator is the same object, which could be seen by their ID.
+Due to the asterisk prefix, the zip function will now try to iterate the 3 iterators, which is actually the same one, at one time and put them into a 3-tuple, until the any of the iterators (again, they are the same) runs out.
+I think the purpose of this is to separate the iterable into groups with identical number of members until there's not enough elements to be grouped. This is clever! Maybe give the constant of name is enough to explain it.
+
+
+https://gist.github.com/apua/fb673e4d6dd0176ee0cffc7b8ffe8886
