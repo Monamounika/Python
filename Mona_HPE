@@ -12,3 +12,13 @@ I think the purpose of this is to separate the iterable into groups with identic
 
 
 https://gist.github.com/apua/fb673e4d6dd0176ee0cffc7b8ffe8886
+
+
+class AverageCalculator:
+    def __init__(self, lower_bound, upper_bound):
+        self.lower_bound = lower_bound
+        self.upper_bound = upper_bound
+
+    def __call__(self, new_average):
+        # Use any method in #1, #2 or #3
+        return result
