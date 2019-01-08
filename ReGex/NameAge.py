@@ -1,4 +1,4 @@
-import re
+import re,sys
 #nameage = open("nameages.txt",'r') this one won't work
 
 with open("nameages.txt",'r') as dummy:
@@ -15,4 +15,7 @@ for eachname in name:
     ageDict[eachname] = age[x]
     x+=1
 
+#print(ageDict)
+
+sys.stdout = open('file', 'w')
 print(ageDict)
